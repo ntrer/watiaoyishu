@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout_border3"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/zhuye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:textColor="@color/textColor2"
+                android:textStyle="bold"
+                android:text="主页"
+                />
+
+
+            <View
+                android:id="@+id/zhuye_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_3"
+                android:layout_below="@+id/zhuye"
+                android:layout_alignEnd="@+id/zhuye"
+                android:layout_alignStart="@+id/zhuye"
+                android:background="@color/weixin"
+                android:minWidth="@dimen/dp_3" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gerenjingli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:textColor="@color/textColor2"
+                android:textStyle="bold"
+                android:text="个人经历"
+                />
+
+
+            <View
+                android:id="@+id/gerenjingli_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_3"
+                android:layout_below="@+id/gerenjingli"
+                android:layout_alignEnd="@+id/gerenjingli"
+                android:layout_alignStart="@+id/gerenjingli"
+                android:minWidth="@dimen/dp_3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/shipin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:textColor="@color/textColor2"
+                android:textStyle="bold"
+                android:text="视频照片"
+                />
+
+
+            <View
+                android:id="@+id/shipin_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_3"
+                android:layout_below="@+id/shipin"
+                android:layout_alignEnd="@+id/shipin"
+                android:layout_alignStart="@+id/shipin"
+                android:minWidth="@dimen/dp_3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

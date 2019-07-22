@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:id="@+id/alivc_tittle_fl_download_content">
+    <LinearLayout
+        android:id="@+id/alivc_little_ll_download"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <FrameLayout
+
+            android:layout_width="246dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/alivc_little_download_bg"
+            android:layout_height="153dp">
+            <com.aliyun.svideo.base.widget.CircleProgressBar
+                android:id="@+id/alivc_little_progress"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:background="@android:color/transparent"
+                android:layout_height="80dp"
+                app:progressColor="@color/white"
+                app:backgroundColor="#119797"
+                app:backgroundWidth="80dp"
+                app:backgroundHeight="80dp"
+                app:progressThickness="4dp"
+                app:progressThicknessColor="#979797"
+                app:progressWidth="72dp"/>
+            <TextView
+                android:id="@+id/alivc_little_tv_progress"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="0%"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/alivc_little_iv_cancel_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/alivc_little_icon_close"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_70">
+
+    <RelativeLayout
+        android:id="@+id/timeline"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="match_parent">
+
+        
+        <ImageView
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@mipmap/yiyundao"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_below="@+id/dot"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="#FFE5E5E5"
+            android:layout_centerHorizontal="true"
+            />
+        
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dizhi"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="【收货地址】北京市朝阳区 小美姐叨 大屯路细节22号院长"
+        android:textColor="#ff2e2d2d"
+        android:textSize="@dimen/dp_14"
+        android:layout_toEndOf="@+id/timeline"
+        android:layout_marginLeft="@dimen/dp_15"
+        />
+
+
+
+</RelativeLayout>

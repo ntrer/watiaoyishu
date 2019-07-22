@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_w"
+    android:layout_marginBottom="@dimen/dp_10"
+    >
+
+   <RelativeLayout
+       android:id="@+id/content"
+       android:orientation="vertical"
+       android:layout_centerHorizontal="true"
+       android:layout_width="@dimen/dp_172"
+       android:layout_height="@dimen/dp_172">
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/pic"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_218"
+           android:src="@mipmap/memgwa"
+           android:scaleType="fitXY"
+           app:riv_corner_radius="@dimen/dp_6"
+           />
+
+
+       <TextView
+           android:id="@+id/tongguo"
+           android:layout_width="@dimen/dp_60"
+           android:layout_height="@dimen/dp_20"
+           android:background="@drawable/text_border4"
+           android:text="审核通过"
+           android:textColor="#ffffffff"
+           android:textSize="@dimen/dp_10"
+           android:gravity="center"
+           />
+
+       <TextView
+           android:id="@+id/shenhezhong"
+           android:layout_width="@dimen/dp_60"
+           android:layout_height="@dimen/dp_20"
+           android:background="@drawable/text_border6"
+           android:text="审核中"
+           android:textColor="#ffffffff"
+           android:textSize="@dimen/dp_10"
+           android:gravity="center"
+           android:visibility="gone"
+           />
+
+       <TextView
+           android:id="@+id/shenheshibai"
+           android:layout_width="@dimen/dp_60"
+           android:layout_height="@dimen/dp_20"
+           android:background="@drawable/text_border5"
+           android:text="审核失败"
+           android:textColor="#ffffffff"
+           android:textSize="@dimen/dp_10"
+           android:gravity="center"
+           android:visibility="gone"
+           />
+
+       <cn.refactor.library.SmoothCheckBox
+           android:id="@+id/checkbox"
+           android:layout_width="@dimen/dp_18"
+           android:layout_height="@dimen/dp_18"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="@dimen/dp_10"
+           android:layout_marginTop="@dimen/dp_5"
+           app:duration="1"
+           app:color_tick="@color/color_w"
+           app:color_checked="@color/weixin"
+           app:color_unchecked_stroke="@color/line"
+           android:visibility="gone"
+           />
+
+
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

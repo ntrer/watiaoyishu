@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_little_title_h"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:id="@+id/iv_left"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/right_margin_profile_toolbar"
+            android:src="@mipmap/aliyun_svideo_back"/>
+        <TextView
+            android:id="@+id/tv_publish"
+            style="@style/NextBtnStyle"
+            android:text="@string/publish"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/right_margin_profile_toolbar"
+            android:textSize="@dimen/font_size_28px" />
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:background="@android:color/black"
+        android:layout_width="@dimen/alivc_little_publish_cover_w"
+        android:layout_height="@dimen/alivc_little_publish_cover_h"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="18dp"/>
+    <EditText
+        android:id="@+id/et_video_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alivc_little_video_desc_hint"
+        android:textColorHint="@android:color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textCursorDrawable="@drawable/alivc_little_publish_edit_cursor_shap"
+        android:theme="@style/AlivcLittlePublishEditTheme"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+</LinearLayout>

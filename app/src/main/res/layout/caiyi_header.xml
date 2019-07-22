@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/layout_border12">
+
+        <RelativeLayout
+            android:id="@+id/zonghepaixu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/zonghepaixu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合排序"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/app_text_color"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+             <View
+                 android:id="@+id/zonghepaixu_line"
+                 android:layout_below="@+id/zonghepaixu_text"
+                 android:layout_width="@dimen/dp_16"
+                  android:layout_height="@dimen/dp_3"
+                  android:background="@color/weixin"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fabushijian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/fabushijian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布时间"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/fabushijian_line"
+                android:layout_below="@+id/fabushijian_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

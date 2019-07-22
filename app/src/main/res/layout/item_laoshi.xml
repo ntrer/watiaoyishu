@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/color_w"
+    >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_below="@+id/line"
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_12"
+            android:src="@mipmap/touxiang"
+            />
+
+        <LinearLayout
+            android:id="@+id/firstline"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_below="@+id/line"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿萨德"
+                android:textSize="@dimen/dp_13"
+                android:textColor="@color/md_orange_500"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondline"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/firstline"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id:12312313"
+                android:textSize="@dimen/dp_11"
+                android:textColor="@color/textColor5"
+                />
+
+        </LinearLayout>
+
+        <cn.refactor.library.SmoothCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            app:duration="1"
+            app:color_tick="@color/color_w"
+            app:color_checked="@color/weixin"
+            app:color_unchecked_stroke="@color/line"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/line"
+        />
+
+</RelativeLayout>

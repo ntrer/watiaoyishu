@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <FrameLayout
+        android:id="@+id/ll_little_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:id="@+id/fl_setting_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="start|center_vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_back" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alivc_little_setting"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="142dp"
+        android:layout_below="@id/ll_little_title"
+        android:background="@mipmap/alivc_mine_setting_bg_lines" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar_bg"
+        android:layout_width="339dp"
+        android:layout_height="339dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alivc_mine_avatar_mine" />
+
+
+    <ImageView
+        android:id="@+id/iv_version_info_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_mine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_version_info_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/alivc_little_video_version_code"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_sdk_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C3C5C6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_mine_id"
+        android:layout_marginTop="21dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>

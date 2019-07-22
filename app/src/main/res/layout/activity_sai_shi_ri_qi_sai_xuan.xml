@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_w"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.necer.view.WeekBar
+        android:id="@+id/week"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/dp_10"
+        android:background="@color/color_w"
+        android:layout_height="@dimen/dp_25" />
+
+    <com.necer.calendar.Miui9Calendar
+        android:layout_below="@+id/week"
+        android:id="@+id/miui9Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_w"
+        app:calendarHeight="@dimen/dp_230"
+        app:selectCircleColor="#FF3AB065"
+        app:defaultCalendar="week"
+        app:hollowCircleColor="#FF3AB065"
+        app:todaySolarTextColor="#FF3AB065"
+        app:isShowLunar="false"
+        app:solarTextSize="@dimen/dp_14"
+        app:selectCircleRadius="@dimen/dp_15"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_below="@+id/miui9Calendar"
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:tag="@string/factual_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </com.necer.calendar.Miui9Calendar>
+
+
+
+
+</RelativeLayout>

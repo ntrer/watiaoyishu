@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_220"
+    android:layout_marginTop="@dimen/dp_24"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/saishi_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        app:riv_corner_radius="@dimen/dp_4"
+        android:src="@mipmap/memgwa"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_12"
+        />
+
+    <TextView
+        android:layout_below="@+id/saishi_pic"
+        android:id="@+id/saishi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019年第十届少儿唱比赛16强大区2019年第十届少儿唱比赛16强大区"
+        android:textColor="#ff2e2d2d"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        />
+
+
+    <TextView
+        android:background="@drawable/text_border3"
+        android:layout_width="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="预热中"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/dp_10"
+        android:layout_height="@dimen/dp_19"/>
+
+
+    <LinearLayout
+        android:id="@+id/dizhi"
+        android:layout_below="@+id/saishi_name"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/zuobiao_img"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/zuobiao"
+            />
+
+
+        <TextView
+            android:id="@+id/zuibiao_dizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="北京"
+            android:textColor="#ff686868"
+            android:textSize="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_5"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/jiage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="12dp"
+            android:layout_height="17dp"
+            android:text="￥"
+            android:textColor="#ffed1c2f"
+            android:textSize="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="#ffed1c2f"
+            android:textSize="@dimen/dp_18"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mianfei"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:text="免费"
+        android:textColor="#ff3ab065"
+        android:textSize="@dimen/dp_14"
+        />
+
+</RelativeLayout>

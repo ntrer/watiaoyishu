@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/nesv"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+        <com.youth.banner.Banner
+            android:layout_below="@+id/caidanlan"
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_160"
+            />
+
+
+    <RelativeLayout
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@drawable/layout_border12">
+
+       <View
+           android:layout_width="@dimen/dp_4"
+           android:layout_height="@dimen/dp_18"
+           android:background="#FF3AB065"
+           android:layout_centerVertical="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门赛事"
+            android:textColor="#ff2e2d2d"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_9"
+            android:layout_height="@dimen/dp_12"
+            android:src="@mipmap/xiaobiaoqian"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_88"
+
+            />
+
+    </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recycleview"
+                android:background="@color/color_w"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/zaibandehuodong"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:visibility="visible"
+        android:background="@color/color_w">
+
+        <View
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="@dimen/dp_18"
+            android:background="#FF3AB065"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ta在办的活动"
+            android:textColor="#ff2e2d2d"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_9"
+            android:layout_height="@dimen/dp_12"
+            android:src="@mipmap/xiaobiaoqian"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_105"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

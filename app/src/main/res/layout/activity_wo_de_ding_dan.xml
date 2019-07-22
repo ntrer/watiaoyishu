@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor2"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的订单"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/shouhou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="售后"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/dp_14"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fenlei"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/layout_border12">
+
+        <RelativeLayout
+            android:id="@+id/quanbu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_33"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/quanbu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/app_text_color"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/quanbu_line"
+                android:layout_below="@+id/quanbu_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/weixin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/daifahuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_110"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/daifahuo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待发货"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/daifahuo_line"
+                android:layout_below="@+id/daifahuo_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/daishouhuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/daishouhuo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待收货"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/daishouhuo_line"
+                android:layout_below="@+id/daishouhuo_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/daipingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_288"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/daipingjia_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待评价"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/daipingjia_line"
+                android:layout_below="@+id/daipingjia_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/fenlei"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor2"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        style="@style/LetterIndexTextViewStyle"
+        android:text="定位城市"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/layout_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_located_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="定位失败"
+                android:textColor="#1A1726"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reLocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新定位"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dp_12"
+            android:textColor="#3AB065"
+            android:layout_marginRight="@dimen/dp_20"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

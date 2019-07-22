@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_publish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/action_bar_bg_50pct2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发布"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<include-->
+    <!--android:id="@+id/action_bar"-->
+    <!--layout="@layout/aliyun_svideo_action_bar_profile"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize" />-->
+
+    <ProgressBar
+        android:id="@+id/publish_progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:progress="0"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/aliyun_svideo_publish_progress_drawable" />
+
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/action_bar">
+
+        <EditText
+            android:id="@+id/publish_desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="7"
+            android:textSize="14sp"
+            android:background="@null"
+            android:maxEms="50"
+            android:hint="写简介并使话题~最多50字"
+            android:textColorHint="@color/compose_edit_text"
+            android:textColor="@color/music_back_color"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:layout_below="@+id/publish_desc"
+            android:id="@+id/xuanzehuati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="话题"
+            android:textColor="#FF3AB065"
+            android:background="@drawable/layout_border4"
+            android:drawableLeft="@mipmap/xuanzehuati"
+            android:drawablePadding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_content"
+            android:textColor="#ff959595"
+            android:textSize="10dp"
+            android:text="0"
+            android:layout_toLeftOf="@+id/text_maxcontent"
+            android:layout_below="@+id/publish_desc"
+            android:layout_alignBaseline="@+id/xuanzehuati"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_maxcontent"
+            android:textColor="#ff959595"
+            android:textSize="10dp"
+            android:text="/50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/publish_desc"
+            android:layout_alignBaseline="@+id/xuanzehuati"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dp_86"
+        android:layout_height="@dimen/dp_115"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/publish_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            />
+
+
+        <TextView
+            android:background="#80000000"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_27"
+            android:text="编辑封面"
+            android:textColor="#FFCCCCCC"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_border2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="发布"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

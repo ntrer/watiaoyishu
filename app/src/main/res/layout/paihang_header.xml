@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/qiansan"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_119">
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_border_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_109">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_pic2"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:src="@mipmap/memgwa"
+                    />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王小雨"
+                    android:layout_gravity="center"
+                    android:textColor="#ff2e2d2d"
+                    android:textSize="@dimen/dp_12"
+                    />
+
+                <TextView
+                    android:id="@+id/defen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_gravity="center"
+                    android:textColor="#fffcaa14"
+                    android:textSize="@dimen/dp_20"
+                    />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dier"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/liked"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_140">
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:background="@drawable/layout_border3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_height="@dimen/dp_120">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:src="@mipmap/memgwa"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王小雨"
+                    android:layout_gravity="center"
+                    android:textColor="#ff2e2d2d"
+                    android:textSize="@dimen/dp_12"
+                    />
+
+                <TextView
+                    android:id="@+id/defen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_gravity="center"
+                    android:textColor="#fffcaa14"
+                    android:textSize="@dimen/dp_20"
+                    />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/diyi"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/liked"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_119">
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_border_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_109">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_pic3"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:src="@mipmap/memgwa"
+                    />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王小雨"
+                    android:layout_gravity="center"
+                    android:textColor="#ff2e2d2d"
+                    android:textSize="@dimen/dp_12"
+                    />
+
+                <TextView
+                    android:id="@+id/defen3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_gravity="center"
+                    android:textColor="#fffcaa14"
+                    android:textSize="@dimen/dp_20"
+                    />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/disan"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/liked"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@color/color_w"
+        android:layout_marginTop="-12dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排行"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:textColor="#ff2e2d2d"
+            android:textSize="@dimen/dp_12"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_25"
+            android:text="评分"
+            android:textColor="#ff2e2d2d"
+            android:textSize="@dimen/dp_12"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

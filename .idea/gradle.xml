@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AlivcCore" />
+            <option value="$PROJECT_DIR$/AlivcLittleVideo" />
+            <option value="$PROJECT_DIR$/AlivcMedia" />
+            <option value="$PROJECT_DIR$/AliyunCrop" />
+            <option value="$PROJECT_DIR$/AliyunCrop/crop_demo" />
+            <option value="$PROJECT_DIR$/AliyunEditor" />
+            <option value="$PROJECT_DIR$/AliyunEditor/editor_demo" />
+            <option value="$PROJECT_DIR$/AliyunFileDownLoader" />
+            <option value="$PROJECT_DIR$/AliyunFileDownLoader/downloadermanager" />
+            <option value="$PROJECT_DIR$/AliyunRecorder" />
+            <option value="$PROJECT_DIR$/AliyunRecorder/record_demo" />
+            <option value="$PROJECT_DIR$/AliyunSVideoBase" />
+            <option value="$PROJECT_DIR$/AliyunSvideoMusic" />
+            <option value="$PROJECT_DIR$/AliyunVideoCommon" />
+            <option value="$PROJECT_DIR$/AliyunVideoSdk" />
+            <option value="$PROJECT_DIR$/Aliyunplayer" />
+            <option value="$PROJECT_DIR$/Aliyunplayer/AlivcPlayer" />
+            <option value="$PROJECT_DIR$/Poplibrary" />
+            <option value="$PROJECT_DIR$/SmoothCheckbox" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/flickerprogressbar" />
+            <option value="$PROJECT_DIR$/ijkplayer" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/pickerview" />
+            <option value="$PROJECT_DIR$/wheelview" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

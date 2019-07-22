@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8F8F8"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="积分任务"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/layout_border16"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/renwu1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/meiriqiandao"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar"
+                    android:layout_toEndOf="@+id/avatar"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日签到"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日签到+2积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/qiandao"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renwu2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar2"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fabushipin"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar2"
+                    android:layout_toEndOf="@+id/avatar2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布视频"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline2"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布3个视频+1积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/fabushipin"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/renwu3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar3"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fenxiangshipin"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline3"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar3"
+                    android:layout_toEndOf="@+id/avatar3"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享视频"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline3"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline3"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar3"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享3个视频+1积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/fenxiang"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renwu4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar4"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fenxaingsaishi"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline4"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar4"
+                    android:layout_toEndOf="@+id/avatar4"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享赛事"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline4"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline4"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar4"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享3个赛事+1积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/fenxiangsaishi"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renwu5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar5"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/liulanshipin"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar5"
+                    android:layout_toEndOf="@+id/avatar5"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浏览视频"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline5"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar5"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浏览3个视频+1积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/liulanshipin"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renwu6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_74">
+
+                <ImageView
+                    android:id="@+id/avatar6"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/goumaishangping"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/firstline6"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_alignTop="@+id/avatar6"
+                    android:layout_toEndOf="@+id/avatar6"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买商品"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="#2E2D2D"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondline6"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/firstline6"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toEndOf="@+id/avatar6"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jiangli6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买商品+1积分"
+                        android:textSize="@dimen/dp_12"
+                        android:textColor="#FCAA14"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/goumaishangpin"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_border5"
+                    android:text="去完成"
+                    android:visibility="visible"
+                    android:textColor="@color/md_green_300"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@color/line"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

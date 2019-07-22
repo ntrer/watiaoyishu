@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_fragment_zero"
+        android:icon="@drawable/bottom_tab0_select"
+        android:title="才艺"
+        />
+
+    <item
+    android:id="@+id/navigation_fragment_one"
+    android:icon="@drawable/bottom_tab2_select"
+    android:title="赛事" />
+
+    <item
+        android:id="@+id/navigation_fragment_two"
+        android:icon="@null"
+        android:title="" />
+
+    <item
+    android:id="@+id/navigation_fragment_three"
+    android:icon="@drawable/bottom_tab3_select"
+    android:title="综艺" />
+
+    <item
+        android:id="@+id/navigation_fragment_four"
+        android:icon="@drawable/bottom_tab1_select"
+        android:title="我的" />
+
+
+</menu>

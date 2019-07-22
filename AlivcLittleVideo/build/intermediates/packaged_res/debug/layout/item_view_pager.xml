@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+    <FrameLayout
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:focusable="false"
+            android:adjustViewBounds="true"/>
+        
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:orientation="vertical"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_height="@dimen/dp_58">
+
+            <!--头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/jiaguanzhu"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:src="@mipmap/guanzhuciren"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+        <!--喜欢-->
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:src="@mipmap/weidianzan"/>
+
+            <!--<com.like.LikeButton-->
+                <!--android:id="@+id/iv_like"-->
+                <!--android:layout_width="@dimen/dp_40"-->
+                <!--android:layout_height="@dimen/dp_40"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--app:icon_size="@dimen/dp_35"-->
+                <!--app:icon_type="heart"-->
+                <!--app:like_drawable="@mipmap/like_on"-->
+                <!--app:unlike_drawable="@mipmap/like" />-->
+
+            <TextView
+                android:id="@+id/like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1200"
+                android:textSize="@dimen/dp_12"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+        <!--评论-->
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:src="@mipmap/comment"/>
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1200"
+                android:textSize="@dimen/dp_12"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+        <!--分享-->
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:src="@mipmap/fenxiang"/>
+
+            <TextView
+                android:id="@+id/share_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1200"
+                android:textSize="@dimen/dp_12"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_user_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_14"
+        android:layout_gravity="bottom|left"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="#吃货带你吃北京"
+        android:layout_marginBottom="@dimen/dp_80"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_12"
+        android:maxLines="2"
+        android:text="男篮世界杯32强尘埃星却沦为 看客男篮世界杯32强尘埃落定 这些巨星却"
+        android:maxWidth="@dimen/dp_210"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/note1"
+            />
+
+        <com.aliyun.svideo.base.widget.MarqueeText
+            android:id="@+id/music_name"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:text="男篮世界杯32强尘埃星却沦为,这些巨星却"
+            android:textColor="#ffffffff"
+            android:textSize="12dp"
+            android:layout_marginLeft="3dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+
+    </LinearLayout>
+
+
+    <com.aliyun.apsara.alivclittlevideo.view.musicnote.MusicalNoteLayout
+        android:id="@+id/music_note_layout"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/dp_14"
+        />
+
+
+
+
+    <!--窄带高清提示标志-->
+    <ImageView
+        android:id="@+id/iv_narrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alivc_little_narrowband_mt"
+        android:layout_marginRight="@dimen/alivc_little_narrowband_mr"
+        android:layout_gravity="right|top"
+        android:visibility="gone"
+
+        android:src="@mipmap/alivc_little_icon_narrowband"/>
+
+    <TextView
+        android:id="@+id/tv_censor_lable"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textSize="30dp"
+
+        android:textColor="@android:color/white"
+        />
+
+
+
+    
+</FrameLayout>

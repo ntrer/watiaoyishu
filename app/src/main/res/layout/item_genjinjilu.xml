@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_68"
+    android:layout_marginBottom="@dimen/dp_2"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/firstline"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="孙大圣"
+                android:textSize="@dimen/dp_12"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondline"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/firstline"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户到店看样品，比较满意..."
+                android:textSize="@dimen/dp_10"
+                android:textStyle="bold"
+                android:textColor="@color/textColor5"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/thirdline"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/secondline"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下次跟进时间: "
+                android:textSize="@dimen/dp_10"
+                android:textStyle="bold"
+                android:textColor="@color/textColor5"
+                />
+
+            <TextView
+                android:id="@+id/xiacigenjinshijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-05-13"
+                android:textSize="@dimen/dp_10"
+                android:textStyle="bold"
+                android:textColor="@color/textColor5"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟进方式:"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/dp_10"
+            android:textColor="@color/textColor5"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/genjinfangshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/dp_10"
+            android:textColor="@color/textColor5"
+            android:textStyle="bold"
+            />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/shiyong"-->
+            <!--android:layout_width="@dimen/dp_45"-->
+            <!--android:layout_height="@dimen/dp_20"-->
+            <!--android:text="使用"-->
+            <!--android:layout_marginTop="@dimen/dp_28"-->
+            <!--android:layout_marginRight="@dimen/dp_22"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:textSize="@dimen/dp_9"-->
+            <!--android:textColor="@color/color_w"-->
+            <!--android:background="@drawable/btn_border"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+
+        <TextView
+            android:id="@+id/shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="2019-05-13"
+            android:textStyle="bold"
+            android:textColor="@color/textColor5"
+            android:textSize="@dimen/dp_10"
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line"
+        />
+
+
+</RelativeLayout>

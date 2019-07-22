@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_63"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_10"
+    android:background="@color/color_w"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pic"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@mipmap/memgwa"
+        />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/name"
+           android:textColor="#ff686868"
+           android:textSize="@dimen/dp_12"
+           android:layout_below="@+id/pic"
+           android:text="林静"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/dp_5"
+           />
+
+    <cn.refactor.library.SmoothCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:layout_alignParentEnd="true"
+        app:duration="1"
+        app:color_tick="@color/color_w"
+        app:color_checked="@color/weixin"
+        app:color_unchecked_stroke="@color/line"
+        />
+
+</RelativeLayout>

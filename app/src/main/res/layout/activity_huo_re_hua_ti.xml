@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_w"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="火热话题"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/huati"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="@dimen/dp_26"
+                android:layout_height="@dimen/dp_26"
+                android:src="@mipmap/huorehuati"
+                android:layout_centerVertical="true"
+                />
+
+
+            <TextView
+                android:id="@+id/huati_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="少儿舞蹈大赛"
+                android:textSize="@dimen/dp_18"
+                android:textColor="@color/textColor4"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/pic"
+                android:layout_marginLeft="@dimen/dp_8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guanzhu"
+                android:text="1222万关注"
+                android:layout_below="@+id/pic"
+                android:layout_marginTop="@dimen/dp_25"
+                android:textSize="@dimen/dp_12"
+                android:textColor="@color/textColor4"
+                android:layout_marginLeft="@dimen/dp_3"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_51"
+                android:layout_height="@dimen/dp_46"
+                android:src="@mipmap/yinhao"
+                android:layout_alignBaseline="@id/huati_name"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/huati"
+            android:id="@+id/rv_recycleview"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/color_w"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

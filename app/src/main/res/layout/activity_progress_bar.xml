@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+             >
+
+    <Button
+        android:id="@+id/download"
+        android:background="@drawable/btn_border4"
+        android:layout_width="@dimen/dp_75"
+        android:text="下载"
+        android:textColor="@color/color_w"
+        android:layout_height="@dimen/dp_38"/>
+
+
+    <com.beiing.flikerprogressbar.FlikerProgressBar
+        android:id="@+id/round_flikerbar"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_38"
+        android:visibility="gone"
+        app:textSize="12dp"
+        app:loadingColor="#3AAF65"
+        app:stopColor="#3AAF65"
+        app:radius="20dp"
+        />
+
+</RelativeLayout>

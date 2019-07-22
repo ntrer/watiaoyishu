@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/dp_40"
+              android:layout_marginRight="@dimen/dp_40"
+              android:background="@drawable/dialog_normal_shap"
+              android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text="文字"
+        android:textColor="#FF030303"
+        android:textSize="@dimen/dp_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#d6d6d6" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ext_dialog_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/extdialog_left_button_style"
+            android:text="不允许"
+            android:textColor="#FF007AFF"
+            android:textSize="@dimen/dp_15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#d6d6d6" />
+
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/extdialog_right_button_style"
+                android:textColor="#FF007AFF"
+                android:text="允许"
+                android:textSize="@dimen/dp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

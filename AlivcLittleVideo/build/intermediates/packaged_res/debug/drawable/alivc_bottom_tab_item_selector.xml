@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="false" android:drawable="@android:color/transparent">
+    </item>
+
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/alivc_bottom_indicator_color" />
+            <padding
+                android:top="@dimen/bottom_tab_underline_top"
+                android:bottom="@dimen/bottom_tab_underline_bottom"
+                />
+        </shape>
+    </item>
+
+</selector>

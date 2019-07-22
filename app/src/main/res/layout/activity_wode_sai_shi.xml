@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_w"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的赛事"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fenlei"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/layout_border12">
+
+        <RelativeLayout
+            android:id="@+id/jinxingzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/jinxingzhong_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进行中"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/app_text_color"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/jinxingzhong_line"
+                android:layout_below="@+id/jinxingzhong_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/weixin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yijisuhu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/yijisuhu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已结束"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/yijisuhu_line"
+                android:layout_below="@+id/yijisuhu_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/fenlei"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</RelativeLayout>

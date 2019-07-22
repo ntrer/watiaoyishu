@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        consumerProguardFiles 'lib-proguard-rules.pro'
+    }
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':AliyunSVideoBase')
+    api project(':AliyunEditor:editor_demo')
+    implementation project(":AliyunSvideoMusic")
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    api project(path: ':AliyunFileDownLoader:downloadermanager')
+    implementation externalGSON
+    implementation externalFaceUnity
+}

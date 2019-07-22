@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56">
+
+    <TextView
+        android:id="@+id/paiming"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:textColor="#ff686868"
+        android:textSize="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_25"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_pic"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:src="@mipmap/memgwa"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/paiming"
+        android:layout_marginLeft="@dimen/dp_30"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/user_pic"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="杨艳"
+        android:textColor="#ff2e2d2d"
+        android:textSize="@dimen/dp_12"
+        />
+
+
+    <TextView
+        android:id="@+id/pingfen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="87"
+        android:textColor="#fffcaa14"
+        android:textSize="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_25"
+        />
+
+</RelativeLayout>

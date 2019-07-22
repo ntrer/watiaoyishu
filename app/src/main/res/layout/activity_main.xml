@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_48"
+       />
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:clipToPadding="true">
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            app:itemTextColor="@drawable/selector_tab_color"
+            android:background="@color/weixin"
+            app:menu="@menu/navigation_fragment" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="16dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_48"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/cir_bg"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/record"
+        android:layout_width="@dimen/dp_39"
+        android:layout_height="@dimen/dp_40"
+        android:src="@mipmap/luzhishipin"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_9"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

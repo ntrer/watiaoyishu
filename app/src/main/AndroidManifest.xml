@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.watiao.yishuproject">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.watiao.yishuproject.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+
+    <application
+        android:name=".MyAppLication"
+        android:allowBackup="true"
+        android:icon="@mipmap/gongsi_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.watiao.yishuproject.android7.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.GuanZhuDeRenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BangDingShouJIHaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BaoMingJIeGuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShouHuoDiZhiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.XuanZeLaoShiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.WodeFenSiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TaDeFenSiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TaGuanZhuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ZhiFuChengGongActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.HeiMingDanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ProgressBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.JiFenRenWuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="28b3bdddceaffa53a89636a11210bc61">
+        </meta-data>
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TianXieZiliaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.GeRenZiLiaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.MengWaZhuYeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TianJiaBiaoQianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TianJiaPaiSheJIngLiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.TianJiaYanYiJIngLiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.DingDanPingJIaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.XIaoXiTiShiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TianJiaShouHuoDiZhiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShouHouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ZongYiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.DingDanZhiFuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.TianJIaHuoJIangJIngLiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.MengWaZiLiaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.HuaTiSouSuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.GengDuoShiPinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.HuoReHuaTiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShangChengActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.HotSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.TaDeGeRenZhuYeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.SaiShiSouSuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.SaiShiXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.ZhuBanFangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BaoMingXuanZeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BaoBeiXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShiPinSouSuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BaoBeiXiangQingDianZanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.BaoBeiXiangQingPingFenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.PaiHangBangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.SaiShiRiQiSaiXuanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShiPinXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar4">
+        </activity>
+        <activity
+            android:name=".activity.WodeDianZanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.WoDeShiPinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.WodeSaiShiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.WoDeDingDanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.WuLiuXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.QuanBuShangPinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShangChengFenLeiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShangChengSouSuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.DingDanZhiFu2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.DingDanDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.ShenQingShouHouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.ShouHouFanKuiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.JiFenMingXiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.JiFenMingXiActivity3"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.JiFenMingXiActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".activity.WoDeSaiShiDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.WoDeGuanZhuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity
+            android:name=".activity.PingJiaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name=".activity.ShiPinXiangQing2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar4">
+        </activity>
+        <activity
+            android:name=".activity.PhotoViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3"/>
+        <activity
+            android:name=".activity.TestActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <!-- 替换原生极光推送接收器 -->
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+
+                <category android:name="com.watiao.yishuproject"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.AdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar3">
+        </activity>
+        <activity android:name=".activity.CanalderActivity">
+        </activity>
+
+    </application>
+
+</manifest>

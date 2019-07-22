@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AlivcLittleVideo</string>
+
+
+    <!-- about dialog  start-->
+
+    <string name="alivc_dialog_editor">Recorder</string>
+    <string name="alivc_dialog_recorder">Editor</string>
+
+
+    <!-- about dialog  end-->
+
+    <!-- tips content-->
+    <string name="alivc_uninclude_module">uninclude this module</string>
+    <string name="alivc_upload_success">upload success</string>
+    <string name="alivc_uploading">上传中</string>
+    <string name="alivc_tip_last_video">已经是最后一个视频了</string>
+    <string name="alivc_little_downloading">下载中</string>
+    <string name="alivc_time_stamp_error">用户时间和服务器时间不在 15 分钟内请检查您的时间戳设置，确认时间戳和服务器时间的差值是否在 15 分钟内。</string>
+    <string name="alivc_little_save_loacal">保存本地</string>
+
+
+    <string name="alivc_little_video_version_code">little video version code : V</string>
+    <string name="alivc_little_setting">Setting</string>
+    <string name="alivc_little_user_setting">UserSetting</string>
+    <string name="alivc_little_user_change">ChangeUser</string>
+    <string name="alivc_little_input_nickname">Please input your nickname</string>
+    <string name="alivc_new_nickname">NewNickName</string>
+
+
+    <string name="alivc_little_publish">后台发布中</string>
+    <string name="alivc_little_user_setting_finish">finish</string>
+    <string name="alivc_little_mine_my_video">my video</string>
+    <string name="alivc_little_no_user">暂无用户</string>
+    <string name="alivc_little_video_desc_hint">Please input a video description</string>
+    <string name="alivc_little_share_delete">delete</string>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_w"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:id="@+id/daohang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/layout_border18">
+
+        <RelativeLayout
+            android:id="@+id/saishixiangqing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/saishixiangqing_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赛事详情"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/app_text_color"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/saishixiangqing_line"
+                android:layout_below="@+id/saishixiangqing_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/weixin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cansaishipin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/cansaishipin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参赛视频"
+                android:textStyle="bold"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/textColor6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <View
+                android:id="@+id/cansaishipin_line"
+                android:layout_below="@+id/cansaishipin_text"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/color_w"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    </LinearLayout>
+

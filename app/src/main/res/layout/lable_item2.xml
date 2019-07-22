@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_actor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/lable_selector2"
+    >
+
+    <TextView
+        android:id="@+id/tab_name"
+        android:layout_width="@dimen/dp_108"
+        android:layout_height="@dimen/dp_36"
+        android:text="吴彦祖"
+        android:gravity="center"
+        android:textSize="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:textColor="@drawable/lable_text_selector3"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+</LinearLayout>

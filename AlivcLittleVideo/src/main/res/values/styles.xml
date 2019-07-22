@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="menuDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- about dialog  start-->
+    <style name="AlivcDialogButtonStyle_Group">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+    <style name="AlivcDialogButtonStyle_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AlivcDialogButtonStyle_Icon">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_gravity">center|bottom</item>
+    </style>
+
+    <!-- about dialog  end-->
+
+
+
+    <style name="dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">#00111111</item>
+        <!-- 设置完全透明 -->
+    </style>
+
+    <!-- TitleBar Loading样式 -->
+    <style name="LoadPbStyleTitle">
+        <item name="android:indeterminateDrawable">@drawable/titlebar_load_progressbar</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:maxWidth">70dp</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:maxHeight">70dp</item>
+    </style>
+
+
+    <style name="expendText" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="collapse" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="AlivcLittlePublishEditTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@color/alivc_little_theme_blue</item>
+    </style>
+
+
+    <style name="LeftDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_left</item>
+        <item name="android:windowExitAnimation">@anim/exit_left</item>
+    </style>
+    <style name="RightDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_right</item>
+        <item name="android:windowExitAnimation">@anim/exit_right</item>
+    </style>
+    <style name="TopDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_top</item>
+        <item name="android:windowExitAnimation">@anim/exit_top</item>
+    </style>
+    <style name="BottomDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_bottom</item>
+    </style>
+
+</resources>

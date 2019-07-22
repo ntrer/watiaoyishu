@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">蛙跳艺术</string>
+
+
+    <!-- MenuDialog相关  start-->
+    <string name="alivc_dialog_editor">视频编辑</string>
+    <string name="alivc_dialog_recorder">视频录制</string>
+
+    <!-- about dialog  end-->
+
+    <!-- 提示内容-->
+    <string name="alivc_uninclude_module">该模块不存在</string>
+    <string name="alivc_upload_success">发布成功，已经进入审核通道</string>
+    <string name="alivc_tip_last_video">已经是最后一个视频了</string>
+    <string name="alivc_time_stamp_error">用户时间和服务器时间不在 15 分钟内请检查您的时间戳设置，确认时间戳和服务器时间的差值是否在 15 分钟内。</string>
+    <string name="alivc_little_video_version_code">趣视频 版本号 V</string>
+    <string name="alivc_little_setting">设置</string>
+    <string name="alivc_little_user_setting">用户设置</string>
+    <string name="alivc_little_user_change">更换用户</string>
+    <string name="alivc_little_input_nickname">请输入用户昵称</string>
+    <string name="alivc_new_nickname">新昵称</string>
+    <string name="alivc_little_user_setting_finish">完成</string>
+    <string name="alivc_little_mine_my_video">我的视频</string>
+    <string name="alivc_little_video_desc_hint">添加视频描述20字以内</string>
+    <string name="alivc_little_share_delete">删除</string>
+
+</resources>

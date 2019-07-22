@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="142dp"
+        android:background="@mipmap/alivc_mine_setting_bg_lines" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar_bg"
+        android:layout_width="339dp"
+        android:layout_height="339dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alivc_mine_avatar_mine" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174.5dp"
+        android:src="@mipmap/alivc_mine_face"
+        />
+
+    <ImageView
+        android:id="@+id/iv_mine_change_avatar"
+        android:layout_width="28.5dp"
+        android:layout_height="28.5dp"
+        android:scaleType="fitXY"
+        android:layout_alignRight="@id/iv_mine_avatar"
+        android:layout_alignBottom="@id/iv_mine_avatar"
+        android:src="@mipmap/alivc_icon_mine_change_avatar"
+        android:layout_alignEnd="@id/iv_mine_avatar" />
+
+    <TextView
+        android:id="@+id/tv_mine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_mine_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ID:26383910"
+        android:textColor="#c3c5c6"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/modify_userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mine_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virgie Hines"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@id/tv_username"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/alivc_icon_right_arrow" />
+
+    </RelativeLayout>
+</RelativeLayout>

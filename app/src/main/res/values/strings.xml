@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">YiShuProject</string>
+    <string name="fuhao" translatable="false">\u0040关注的人</string>
+    <string name="tafensi" translatable="false">ta的粉丝</string>
+</resources>

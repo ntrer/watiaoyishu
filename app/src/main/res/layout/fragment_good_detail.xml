@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/wb_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_14"
+            android:src="@mipmap/caiyi_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/wb_content"
+            android:layout_marginTop="@dimen/dp_36"
+            android:layout_marginBottom="@dimen/dp_78"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#FFFFFFFF"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_68">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@drawable/beijing_jianbian2"
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:background="@drawable/btn_border2"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_44"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_16"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/dp_14"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

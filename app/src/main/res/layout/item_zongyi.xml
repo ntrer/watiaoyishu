@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor2"
+    android:layout_marginBottom="@dimen/dp_16"
+    >
+
+   <LinearLayout
+       android:layout_centerHorizontal="true"
+       android:orientation="vertical"
+       android:layout_width="@dimen/dp_164"
+       android:background="@drawable/layout_border16"
+       android:layout_height="wrap_content">
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/pic"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_120"
+           android:src="@mipmap/memgwa"
+           android:scaleType="centerCrop"
+           app:riv_corner_radius_bottom_left="0dp"
+           app:riv_corner_radius_bottom_right="0dp"
+           app:riv_corner_radius_top_left="@dimen/dp_4"
+           app:riv_corner_radius_top_right="@dimen/dp_4"
+           />
+
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2018年第六强大赛"
+          android:layout_marginLeft="@dimen/dp_10"
+           android:layout_marginTop="@dimen/dp_10"
+           android:layout_marginBottom="@dimen/dp_3"
+           android:textSize="@dimen/dp_14"
+           android:textColor="@color/textColor4"
+           />
+
+       <TextView
+           android:id="@+id/time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2019-06-17"
+           android:textSize="@dimen/dp_12"
+           android:textColor="@color/textColor6"
+           android:layout_marginLeft="@dimen/dp_10"
+           android:layout_marginBottom="@dimen/dp_10"
+           />
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_w"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="物流详情"
+            android:textColor="@color/color_w"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/srl_refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="@dimen/dp_16"-->
+        <!--android:layout_marginLeft="@dimen/dp_16"-->
+        <!--android:layout_marginRight="@dimen/dp_16"-->
+        <!--android:layout_marginBottom="@dimen/dp_60"-->
+        <!--&gt;-->
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/rv_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_w"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_60"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_14"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:src="@mipmap/caiyi_logo"
+        />
+
+
+</RelativeLayout>

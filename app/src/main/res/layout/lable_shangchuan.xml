@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_actor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_108"
+    android:layout_height="@dimen/dp_136"
+    android:layout_margin="5dp"
+    android:background="@drawable/layout_border14"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usr_img"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_16"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/memgwa"
+        />
+
+    <TextView
+        android:layout_below="@+id/usr_img"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="吴彦祖"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+    <Button
+        android:layout_below="@+id/name"
+        android:id="@+id/jiagaunzhu"
+        android:layout_width="@dimen/dp_76"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_border4"
+        android:text="+ 关注"
+        android:visibility="gone"
+        android:textColor="@color/color_w"
+        android:textSize="@dimen/dp_12"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/name"
+        android:id="@+id/yighuanzhu"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/btn_border6"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dp_76"
+        android:layout_height="@dimen/dp_30">
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_9"
+            android:src="@mipmap/duihao"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已关注"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_23"
+            android:visibility="visible"
+            android:textColor="#959595"
+            android:textSize="@dimen/dp_12"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    <!--<Button-->
+        <!--android:layout_below="@+id/name"-->
+        <!--android:id="@+id/yighuanzhu"-->
+        <!--android:layout_width="@dimen/dp_76"-->
+        <!--android:layout_height="@dimen/dp_30"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/btn_border6"-->
+        <!--android:text="关注"-->
+        <!--android:visibility="visible"-->
+        <!--android:textColor="#959595"-->
+        <!--android:textSize="@dimen/dp_12"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="@dimen/dp_10"-->
+        <!--/>-->
+
+
+
+</RelativeLayout>

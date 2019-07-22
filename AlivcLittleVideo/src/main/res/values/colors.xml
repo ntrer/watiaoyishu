@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="alivc_little_theme_blue">#00C1DE</color>
+    <color name="alivc_bottom_indicator_color">#00C1DE</color>
+    <color name="alivc_little_text_gray">#C3C5C6</color>
+    <color name="alivc_little_dialog_share_bg">#E3000000 </color>
+    <color name="alivc_little_alivc_green">#FFF</color>
+    <color name="alivc_little_download_bg">#B3373D41</color>
+    <color name="alivc_little_red">#FC4347 </color>
+</resources>

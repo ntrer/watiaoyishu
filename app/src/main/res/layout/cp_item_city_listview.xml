@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/tv_item_city_listview_letter"
+        style="@style/LetterIndexTextViewStyle"
+        android:textSize="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:background="#F8F8F8"
+        android:textColor="#959595"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/tv_item_city_listview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/shape_city_normal_bg"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dp_14"
+        android:textColor="#1A1726"/>
+
+</LinearLayout>

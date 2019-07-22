@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f5f5f5"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_xiaofeijilu"
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_xiaofeijilu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_nodata"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_100"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/nodata"
+                android:layout_width="@dimen/dp_112"
+                android:layout_height="@dimen/dp_112"
+                android:src="@mipmap/no_video"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无视频"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

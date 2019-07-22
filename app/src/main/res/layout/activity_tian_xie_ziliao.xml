@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_w"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_w"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/bangding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="填写资料"
+        android:textSize="@dimen/dp_23"
+        android:textStyle="bold"
+        android:textColor="@color/textColor4"
+        android:layout_marginTop="@dimen/dp_90"
+        android:layout_marginLeft="@dimen/dp_40"
+        />
+
+
+    <com.watiao.yishuproject.ui.SLEditTextView
+        android:id="@+id/txt_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="@dimen/dp_345"
+        android:layout_below="@+id/bangding"
+        android:hint="输入昵称(最多16个字符)"
+        android:theme="@style/UpdateUserEditText"
+        android:textColor="@color/md_black_1000"
+        android:textColorHint="@color/textColor2"
+        android:textSize="@dimen/dp_13"
+        android:inputType="phone"
+        android:layout_height="@dimen/dp_45"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="该昵称已被占用，重新输入"
+        android:layout_below="@+id/txt_phone"
+        android:textSize="@dimen/dp_10"
+        android:textColor="@color/textColor6"
+        android:layout_marginStart="@dimen/dp_45"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:background="@drawable/btn_border"
+        android:layout_below="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="完成"
+        android:gravity="center"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/color_w"
+        android:clickable="false"
+        />
+
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:src="@mipmap/caiyi_logo"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_pic"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_16"
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="郑秀兰"
+        android:textColor="#A2A4A1"
+        android:textSize="@dimen/dp_12"
+        android:layout_toRightOf="@+id/user_pic"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-08-13"
+        android:textColor="#A2A4A1"
+        android:textSize="@dimen/dp_12"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_16"
+        />
+
+    <TextView
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:text="全新一代数据可视化解决方案，致于提供一套简单方无限可！"
+        android:textColor="#ffffffff"
+        android:lineSpacingExtra="@dimen/dp_5"
+        android:textSize="@dimen/dp_14"
+        android:layout_toRightOf="@+id/user_pic"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        />
+
+</RelativeLayout>

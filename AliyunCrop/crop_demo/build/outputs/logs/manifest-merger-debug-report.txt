@@ -1,0 +1,69 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:1:1-28:12
+	package
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:5:5-26:19
+activity#com.aliyun.demo.crop.CropSettingActivity
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:6:9-10:20
+	android:screenOrientation
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:8:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:9:13-52
+	android:theme
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:7:19-61
+	android:name
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:6:19-74
+activity#com.aliyun.demo.crop.MediaActivity
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:11:9-15:20
+	android:screenOrientation
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:14:13-49
+	android:theme
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:12:13-55
+	tools:replace
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:13:13-42
+	android:name
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:11:19-68
+activity#com.aliyun.demo.crop.AliyunVideoCropActivity
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:16:9-20:20
+	android:screenOrientation
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:19:13-49
+	android:theme
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:17:13-55
+	tools:replace
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:18:13-42
+	android:name
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:16:19-78
+activity#com.aliyun.demo.crop.AliyunImageCropActivity
+ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:21:9-25:20
+	android:screenOrientation
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:24:19-55
+	android:theme
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:22:19-61
+	tools:replace
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:23:19-48
+	android:name
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml:21:19-78
+uses-sdk
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+		ADDED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\YiShuProject\AliyunCrop\crop_demo\src\main\AndroidManifest.xml
